@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Owner;
+use App\Admin;
 use Auth;
 
 class OwnerController extends Controller

@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Carbon\Carbon;
 
-use App\Owner;
+use App\Admin;
 
 use DB;
 class AdminLoginController extends Controller
