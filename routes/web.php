@@ -33,13 +33,13 @@ Route::prefix('admin')->group(function () {
 
         Route::get('/logout', 'Auth\AdminLoginController@logout')->name('admin.logout');
 
-        Route::get('/', 'OwnerController@index')->name('admin.dashboard');
+        Route::get('/', 'AdminController@index')->name('admin.dashboard');
 
 
 
     });
 
-Route::get('dashboard', 'OwnerController@index');
+Route::get('dashboard', 'AdminController@index');
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth:admin']], function () {
     //admin routes

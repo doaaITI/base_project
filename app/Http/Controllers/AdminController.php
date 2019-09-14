@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Admin;
 use Auth;
 
-class OwnerController extends Controller
+class AdminController extends Controller
 {
 
     public function __construct()
